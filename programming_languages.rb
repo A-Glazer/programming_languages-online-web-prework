@@ -8,7 +8,7 @@ def reformat_languages(languages)
       #lang - :ruby type - :type - "interpreted"
       type.each do |key, value|
         new_hash[lang] = {}
-        new_hash[lang][key] => value
+        new_hash[lang][key] = value
 
       end
       binding.pry
