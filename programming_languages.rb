@@ -14,8 +14,7 @@ def reformat_languages(languages)
       end
       binding.pry
     end
-    new_hash.merge!(data){|lang, type|}
-    #new_hash has lang and type => type value
+
 
   end
 
