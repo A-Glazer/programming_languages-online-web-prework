@@ -9,8 +9,8 @@ def reformat_languages(languages)
       type.each do |key, value|
         new_hash[lang] = {}
         new_hash[lang][key] = value
-        new_hash[lang][:style] = []
-
+        new_hash[lang][:style] ||= [] 
+        new_hash[lang][:style] << style
       end
       binding.pry
     end
